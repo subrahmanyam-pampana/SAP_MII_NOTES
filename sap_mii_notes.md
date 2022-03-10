@@ -23,12 +23,12 @@
 
 ## Services:
 
-**Below is the list of services which are available in MII 12.0 and later.
+**Below is the list of services which are available in MII 12.0 and later**
 
 - Admin
 - Scheduler
 - SystemInfo
-**Below I mentioned few more services which are available in MII 12.1 and later
+**Below I mentioned few more services which are available in MII 12.1 and later**
 - Indexing
 - Monitoring
 - BLSManager
