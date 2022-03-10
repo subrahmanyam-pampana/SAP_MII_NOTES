@@ -28,6 +28,7 @@
 - Admin
 - Scheduler
 - SystemInfo
+
 **Below I mentioned few more services which are available in MII 12.1 and later**
 - Indexing
 - Monitoring
