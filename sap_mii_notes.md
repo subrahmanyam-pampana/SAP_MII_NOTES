@@ -8,7 +8,9 @@
  
  ## Webservices:
  - Calling the Transactions from web page
-    -  syntax for getting xml data: `<protocal>://<server>:<port>/XMII/Runner?Transaction=<transaction path>&OutputParameter=*&Content-Type=text/xml&<paramName>=<param value>`
-    -  syntax for getting xml data: `<protocal>://<server>:<port>/XMII/Runner?Transaction=<transaction path>&OutputParameter=*&Content-Type=text/json&<paramName>=<param value>`
+    -  syntax for getting xml data: `<protocal>://<server>:<port>/XMII/Runner?Transaction=<transaction_path>&OutputParameter=*&Content-Type=text/xml&<paramName>=<param value>`
+    -  syntax for getting xml data: `<protocal>://<server>:<port>/XMII/Runner?Transaction=<transaction_path>&OutputParameter=*&Content-Type=text/json&<paramName>=<param value>`
  - Calling Xacute Qury or Query Template from web page
+    - syntax for getting xml data: `<protocal>://<server>:<port>/XMII/Illuminator?QueryTemplate=<query_path>&Content-Type=text/xml&<paramName>=<param value>`
+    - syntax for getting xml data: `<protocal>://<server>:<port>/XMII/Illuminator?QueryTemplate=<query_path>&Content-Type=text/json&<paramName>=<param value>`
  
