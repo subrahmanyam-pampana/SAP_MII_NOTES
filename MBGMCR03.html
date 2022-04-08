@@ -1,0 +1,1409 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title> Documentation for IDoc record types or IDoc type             </title>
+</head>
+<body>
+<p>
+</p><hr>
+<h1><a name="CONTROL">Control record</a></h1>
+<hr>
+<p>
+</p><h2><a name="CONTROL ATTR">Control record structure</a></h2>
+<p>
+</p><p>
+</p><p>
+</p><ul>
+<li>TABNAM                         : <b>Name of Table Structure                                                                                                             </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 001, Offset : 0000. external length : 000010<br>
+</p></li><li>MANDT                          : <b>Client                                                                                                                              </b><p>
+</p><p>
+internal data type : CLNT<br>
+Internal length : 000003 characters<br>
+Position in segment : 002, Offset : 0010. external length : 000003<br>
+</p></li><li>DOCNUM                         : <b>IDoc number                                                                                                                         </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000016 characters<br>
+Position in segment : 003, Offset : 0013. external length : 000016<br>
+</p></li><li>DOCREL                         : <b>SAP Release for IDoc                                                                                                                </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000004 characters<br>
+Position in segment : 004, Offset : 0029. external length : 000004<br>
+</p></li><li>STATUS                         : <b>Status of IDoc                                                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000002 characters<br>
+Position in segment : 005, Offset : 0033. external length : 000002<br>
+</p></li><li>DIRECT                         : <b>Direction                                                                                                                           </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 006, Offset : 0035. external length : 000001<br>
+</p></li><li>OUTMOD                         : <b>Output mode                                                                                                                         </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 007, Offset : 0036. external length : 000001<br>
+</p></li><li>EXPRSS                         : <b>Overriding in inbound processing                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 008, Offset : 0037. external length : 000001<br>
+</p></li><li>TEST                           : <b>Test flag                                                                                                                           </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 009, Offset : 0038. external length : 000001<br>
+</p></li><li>IDOCTYP                        : <b>Name of basic type                                                                                                                  </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000030 characters<br>
+Position in segment : 010, Offset : 0039. external length : 000030<br>
+</p></li><li>CIMTYP                         : <b>Extension (defined by customer)                                                                                                     </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000030 characters<br>
+Position in segment : 011, Offset : 0069. external length : 000030<br>
+</p></li><li>MESTYP                         : <b>Message type                                                                                                                        </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000030 characters<br>
+Position in segment : 012, Offset : 0099. external length : 000030<br>
+</p></li><li>MESCOD                         : <b>Message code                                                                                                                        </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000003 characters<br>
+Position in segment : 013, Offset : 0129. external length : 000003<br>
+</p></li><li>MESFCT                         : <b>Message Function                                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000003 characters<br>
+Position in segment : 014, Offset : 0132. external length : 000003<br>
+</p></li><li>STD                            : <b>EDI standard, flag                                                                                                                  </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 015, Offset : 0135. external length : 000001<br>
+</p></li><li>STDVRS                         : <b>EDI standard, version and release                                                                                                   </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000006 characters<br>
+Position in segment : 016, Offset : 0136. external length : 000006<br>
+</p></li><li>STDMES                         : <b>EDI message type                                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000006 characters<br>
+Position in segment : 017, Offset : 0142. external length : 000006<br>
+</p></li><li>SNDPOR                         : <b>Sender port (SAP System, external subsystem)                                                                                        </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 018, Offset : 0148. external length : 000010<br>
+</p></li><li>SNDPRT                         : <b>Partner type of sender                                                                                                              </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000002 characters<br>
+Position in segment : 019, Offset : 0158. external length : 000002<br>
+</p></li><li>SNDPFC                         : <b>Partner Function of Sender                                                                                                          </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000002 characters<br>
+Position in segment : 020, Offset : 0160. external length : 000002<br>
+</p></li><li>SNDPRN                         : <b>Partner Number of Sender                                                                                                            </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 021, Offset : 0162. external length : 000010<br>
+</p></li><li>SNDSAD                         : <b>Sender address (SADR)                                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000021 characters<br>
+Position in segment : 022, Offset : 0172. external length : 000021<br>
+</p></li><li>SNDLAD                         : <b>Logical address of sender                                                                                                           </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000070 characters<br>
+Position in segment : 023, Offset : 0193. external length : 000070<br>
+</p></li><li>RCVPOR                         : <b>Receiver port                                                                                                                       </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 024, Offset : 0263. external length : 000010<br>
+</p></li><li>RCVPRT                         : <b>Partner Type of Receiver                                                                                                            </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000002 characters<br>
+Position in segment : 025, Offset : 0273. external length : 000002<br>
+</p></li><li>RCVPFC                         : <b>Partner function of recipient                                                                                                       </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000002 characters<br>
+Position in segment : 026, Offset : 0275. external length : 000002<br>
+</p></li><li>RCVPRN                         : <b>Partner Number of Receiver                                                                                                          </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 027, Offset : 0277. external length : 000010<br>
+</p></li><li>RCVSAD                         : <b>Recipient address (SADR)                                                                                                            </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000021 characters<br>
+Position in segment : 028, Offset : 0287. external length : 000021<br>
+</p></li><li>RCVLAD                         : <b>Logical address of recipient                                                                                                        </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000070 characters<br>
+Position in segment : 029, Offset : 0308. external length : 000070<br>
+</p></li><li>CREDAT                         : <b>Created on                                                                                                                          </b><p>
+</p><p>
+internal data type : DATS<br>
+Internal length : 000008 characters<br>
+Position in segment : 030, Offset : 0378. external length : 000008<br>
+</p></li><li>CRETIM                         : <b>Created at                                                                                                                          </b><p>
+</p><p>
+internal data type : TIMS<br>
+Internal length : 000006 characters<br>
+Position in segment : 031, Offset : 0386. external length : 000006<br>
+</p></li><li>REFINT                         : <b>Transmission file (EDI Interchange)                                                                                                 </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000014 characters<br>
+Position in segment : 032, Offset : 0392. external length : 000014<br>
+</p></li><li>REFGRP                         : <b>Message group (EDI Message Group)                                                                                                   </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000014 characters<br>
+Position in segment : 033, Offset : 0406. external length : 000014<br>
+</p></li><li>REFMES                         : <b>Message (EDI Message)                                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000014 characters<br>
+Position in segment : 034, Offset : 0420. external length : 000014<br>
+</p></li><li>ARCKEY                         : <b>Key for external message archive                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000070 characters<br>
+Position in segment : 035, Offset : 0434. external length : 000070<br>
+</p></li><li>SERIAL                         : <b>Serialization                                                                                                                       </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000020 characters<br>
+Position in segment : 036, Offset : 0504. external length : 000020<br>
+</p></li></ul>
+<p>
+</p><hr>
+<h1><a name="DATA">Data record</a></h1>
+<hr>
+<p>
+</p><h2><a name="DATA ATTR">Data record structure</a></h2>
+<p>
+</p><p>
+</p><p>
+</p><ul>
+<li>SEGNAM                         : <b>Segment (external name)                                                                                                             </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000030 characters<br>
+Position in segment : 001, Offset : 0000. external length : 000030<br>
+</p></li><li>MANDT                          : <b>Client                                                                                                                              </b><p>
+</p><p>
+internal data type : CLNT<br>
+Internal length : 000003 characters<br>
+Position in segment : 002, Offset : 0030. external length : 000003<br>
+</p></li><li>DOCNUM                         : <b>IDoc number                                                                                                                         </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000016 characters<br>
+Position in segment : 003, Offset : 0033. external length : 000016<br>
+</p></li><li>SEGNUM                         : <b>Segment Number                                                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000006 characters<br>
+Position in segment : 004, Offset : 0049. external length : 000006<br>
+</p></li><li>PSGNUM                         : <b>Number of superior parent segment                                                                                                   </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000006 characters<br>
+Position in segment : 005, Offset : 0055. external length : 000006<br>
+</p></li><li>HLEVEL                         : <b>Hierarchy level of SAP segment                                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000002 characters<br>
+Position in segment : 006, Offset : 0061. external length : 000002<br>
+</p></li><li>SDATA                          : <b>Application data                                                                                                                    </b><p>
+</p><p>
+internal data type : LCHR<br>
+Internal length : 001000 characters<br>
+Position in segment : 007, Offset : 0063. external length : 001000<br>
+</p></li></ul>
+<p>
+</p><hr>
+<h1><a name="STATUS">Status record</a></h1>
+<hr>
+<p>
+</p><h2><a name="STATUS ATTR">Status record structure</a></h2>
+<p>
+</p><p>
+</p><p>
+</p><ul>
+<li>TABNAM                         : <b>Name of Table Structure                                                                                                             </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 001, Offset : 0000. external length : 000010<br>
+</p></li><li>MANDT                          : <b>Client                                                                                                                              </b><p>
+</p><p>
+internal data type : CLNT<br>
+Internal length : 000003 characters<br>
+Position in segment : 002, Offset : 0010. external length : 000003<br>
+</p></li><li>DOCNUM                         : <b>IDoc number                                                                                                                         </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000016 characters<br>
+Position in segment : 003, Offset : 0013. external length : 000016<br>
+</p></li><li>LOGDAT                         : <b>Date of status information                                                                                                          </b><p>
+</p><p>
+internal data type : DATS<br>
+Internal length : 000008 characters<br>
+Position in segment : 004, Offset : 0029. external length : 000008<br>
+</p></li><li>LOGTIM                         : <b>Time of status information                                                                                                          </b><p>
+</p><p>
+internal data type : TIMS<br>
+Internal length : 000006 characters<br>
+Position in segment : 005, Offset : 0037. external length : 000006<br>
+</p></li><li>STATUS                         : <b>Status of IDoc                                                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000002 characters<br>
+Position in segment : 006, Offset : 0043. external length : 000002<br>
+</p></li><li>STAMQU                         : <b>Status for message in status record                                                                                                 </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000003 characters<br>
+Position in segment : 007, Offset : 0045. external length : 000003<br>
+</p></li><li>STAMID                         : <b>Message for status notification: Message class                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000020 characters<br>
+Position in segment : 008, Offset : 0048. external length : 000020<br>
+</p></li><li>STAMNO                         : <b>Message number for status message                                                                                                   </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000003 characters<br>
+Position in segment : 009, Offset : 0068. external length : 000003<br>
+</p></li><li>STATYP                         : <b>ABAP message type (A, W, E, S, I) in status message                                                                                 </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 010, Offset : 0071. external length : 000001<br>
+</p></li><li>STAPA1                         : <b>First parameter for message in status record                                                                                        </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000050 characters<br>
+Position in segment : 011, Offset : 0072. external length : 000050<br>
+</p></li><li>STAPA2                         : <b>Second parameter for message in status record                                                                                       </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000050 characters<br>
+Position in segment : 012, Offset : 0122. external length : 000050<br>
+</p></li><li>STAPA3                         : <b>Third parameter for message in status record                                                                                        </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000050 characters<br>
+Position in segment : 013, Offset : 0172. external length : 000050<br>
+</p></li><li>STAPA4                         : <b>Fourth parameter for message in status record                                                                                       </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000050 characters<br>
+Position in segment : 014, Offset : 0222. external length : 000050<br>
+</p></li><li>STATXT                         : <b>Status text                                                                                                                         </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000070 characters<br>
+Position in segment : 015, Offset : 0272. external length : 000070<br>
+</p></li><li>UNAME                          : <b>User Name                                                                                                                           </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000012 characters<br>
+Position in segment : 016, Offset : 0342. external length : 000012<br>
+</p></li><li>REPID                          : <b>Program                                                                                                                             </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000030 characters<br>
+Position in segment : 017, Offset : 0354. external length : 000030<br>
+</p></li><li>ROUTID                         : <b>Subroutine (routine, function module)                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000030 characters<br>
+Position in segment : 018, Offset : 0384. external length : 000030<br>
+</p></li><li>SEGNUM                         : <b>Segment Number                                                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000006 characters<br>
+Position in segment : 019, Offset : 0414. external length : 000006<br>
+</p></li><li>SEGFLD                         : <b>Segment field                                                                                                                       </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000030 characters<br>
+Position in segment : 020, Offset : 0420. external length : 000030<br>
+</p></li><li>REFINT                         : <b>Transmission file (EDI Interchange)                                                                                                 </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000014 characters<br>
+Position in segment : 021, Offset : 0450. external length : 000014<br>
+</p></li><li>REFGRP                         : <b>Message group (EDI Message Group)                                                                                                   </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000014 characters<br>
+Position in segment : 022, Offset : 0464. external length : 000014<br>
+</p></li><li>REFMES                         : <b>Message (EDI Message)                                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000014 characters<br>
+Position in segment : 023, Offset : 0478. external length : 000014<br>
+</p></li><li>ARCKEY                         : <b>Key for external message archive                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000070 characters<br>
+Position in segment : 024, Offset : 0492. external length : 000070<br>
+</p></li></ul>
+<hr>
+<h1><a name="IDOCTYPE">Structure of basic type MBGMCR03                      </a></h1>
+<h1>
+Post Goods Movements with MB_CREATE_GOODS_MOVEMENT
+</h1><p></p><hr>
+<ul>
+<p>
+</p><li><b>E1MBGMCR                    : Header Segment                                                                                                                      </b>
+<p>
+Status: Optional    ,
+min. number :          1     , max. number :          1      </p><p>
+</p><p>
+<a href="#E1MBGMCR                   STRUCT"><i>Structure</i></a>
+</p><ul>
+<p>
+</p><li><b>E1BP2017_GM_HEAD_01         : BAPI Communication Structure: Material Document Header Data                                                                         </b>
+<p>
+Status: Optional    ,
+min. number :          1     , max. number :          1      </p><p>
+</p><p>
+<a href="#E1BP2017_GM_HEAD_01        STRUCT"><i>Structure</i></a>
+</p><p>
+</p></li><li><b>E1BP2017_GM_CODE            : MMIM: New Key Assignment GM_CODE to Transaction of Inv. Mgmt                                                                        </b>
+<p>
+Status: Optional    ,
+min. number :          1     , max. number :          1      </p><p>
+</p><p>
+<a href="#E1BP2017_GM_CODE           STRUCT"><i>Structure</i></a>
+</p><p>
+</p></li><li><b>/SPE/E1BP2017_GM_REF_EWM    : BAPI Communication Structure: Material Document EWM Ref.                                                                            </b>
+<p>
+Status: Optional    ,
+min. number :          1     , max. number :          1      </p><p>
+</p><p>
+<a href="#/SPE/E1BP2017_GM_REF_EWM   STRUCT"><i>Structure</i></a>
+</p><p>
+</p></li><li><b>E1BP2017_GM_ITEM_CREATE     : BAPI Communication Structure: Create Material Document Item                                                                         </b>
+<p>
+Status: Optional    ,
+min. number :          1     , max. number :  999999999      </p><p>
+</p><p>
+<a href="#E1BP2017_GM_ITEM_CREATE    STRUCT"><i>Structure</i></a>
+</p><ul>
+<p>
+</p><li><b>E1BP2017_GM_ITEM_CREATE1    : BAPI Communication Structure: Create Material Document Item                                                                         </b>
+<p>
+Status: Optional    ,
+min. number :          1     , max. number :          1      </p><p>
+</p><p>
+<a href="#E1BP2017_GM_ITEM_CREATE1   STRUCT"><i>Structure</i></a>
+</p></li></ul>
+<p>
+</p></li><li><b>E1BP2017_GM_SERIALNUMBER    : BAPI Communication Structure: Create Mat. Doc., Serial No.                                                                          </b>
+<p>
+Status: Optional    ,
+min. number :          1     , max. number :  999999999      </p><p>
+</p><p>
+<a href="#E1BP2017_GM_SERIALNUMBER   STRUCT"><i>Structure</i></a>
+</p><p>
+</p></li><li><b>/SPE/E1BP2017_SERVICEPART_D : BAPI Communication Structure: Service Parts Data                                                                                    </b>
+<p>
+Status: Optional    ,
+min. number :          1     , max. number :  999999999      </p><p>
+</p><p>
+<a href="#/SPE/E1BP2017_SERVICEPART_DSTRUCT"><i>Structure</i></a>
+</p><p>
+</p></li><li><b>E1BPPAREX                   : Ref. Structure for BAPI Parameter EXTENSIONIN/EXTENSIONOUT                                                                          </b>
+<p>
+Status: Optional    ,
+min. number :          1     , max. number :  999999999      </p><p>
+</p><p>
+<a href="#E1BPPAREX                  STRUCT"><i>Structure</i></a>
+</p></li></ul>
+</li></ul>
+<hr>
+<h1>
+<a name="SEGMENTSTRUCT">Segment structures</a>
+</h1><p></p><hr>
+<ul>
+<p></p><li><h2><a name="E1MBGMCR                   STRUCT">E1MBGMCR                    : Header Segment                                                                                                                      </a></h2>
+<p>
+Segment definition E2MBGMCR000
+Released since Release 46A , Segment length: 0001
+</p><p>
+</p><ol>
+<li>TESTRUN                        : <b>Switch to Simulation Session for Write BAPIs                                                                                        </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 001, Offset : 0063. external length : 000001<br>
+</p></li></ol>
+<p>
+</p><p></p></li><li><h2><a name="E1BP2017_GM_HEAD_01        STRUCT">E1BP2017_GM_HEAD_01         : BAPI Communication Structure: Material Document Header Data                                                                         </a></h2>
+<p>
+Segment definition E2BP2017_GM_HEAD_01003
+Released since Release 620 , Segment length: 0208
+</p><p>
+</p><ol>
+<li>PSTNG_DATE                     : <b>Posting Date in the Document                                                                                                        </b><p>
+</p><p>
+internal data type : DATS<br>
+Internal length : 000008 characters<br>
+Position in segment : 001, Offset : 0063. external length : 000008<br>
+</p></li><li>DOC_DATE                       : <b>Document Date in Document                                                                                                           </b><p>
+</p><p>
+internal data type : DATS<br>
+Internal length : 000008 characters<br>
+Position in segment : 002, Offset : 0071. external length : 000008<br>
+</p></li><li>REF_DOC_NO                     : <b>Reference Document Number                                                                                                           </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000016 characters<br>
+Position in segment : 003, Offset : 0079. external length : 000016<br>
+</p></li><li>BILL_OF_LADING                 : <b>Number of bill of lading at time of goods receipt                                                                                   </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000016 characters<br>
+Position in segment : 004, Offset : 0095. external length : 000016<br>
+</p></li><li>GR_GI_SLIP_NO                  : <b>Goods Receipt/Issue Slip Number                                                                                                     </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 005, Offset : 0111. external length : 000010<br>
+</p></li><li>PR_UNAME                       : <b>User Name                                                                                                                           </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000012 characters<br>
+Position in segment : 006, Offset : 0121. external length : 000012<br>
+</p></li><li>HEADER_TXT                     : <b>Document Header Text                                                                                                                </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000025 characters<br>
+Position in segment : 007, Offset : 0133. external length : 000025<br>
+</p></li><li>VER_GR_GI_SLIP                 : <b>Version for Printing GR/GI Slip                                                                                                     </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 008, Offset : 0158. external length : 000001<br>
+</p></li><li>VER_GR_GI_SLIPX                : <b>Updated information in related user data field                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 009, Offset : 0159. external length : 000001<br>
+</p></li><li>EXT_WMS                        : <b>Control posting for external WMS                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 010, Offset : 0160. external length : 000001<br>
+</p></li><li>REF_DOC_NO_LONG                : <b>Reference Document Number (for Dependencies see Long Text)                                                                          </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000035 characters<br>
+Position in segment : 011, Offset : 0161. external length : 000035<br>
+</p></li><li>BILL_OF_LADING_LONG            : <b>Bill of Lading Number in GR (Dependencies: see Long Text)                                                                           </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000035 characters<br>
+Position in segment : 012, Offset : 0196. external length : 000035<br>
+</p></li><li>BAR_CODE                       : <b>Bar code entry                                                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000040 characters<br>
+Position in segment : 013, Offset : 0231. external length : 000040<br>
+</p></li></ol>
+<p>
+</p><p></p></li><li><h2><a name="E1BP2017_GM_CODE           STRUCT">E1BP2017_GM_CODE            : MMIM: New Key Assignment GM_CODE to Transaction of Inv. Mgmt                                                                        </a></h2>
+<p>
+Segment definition E2BP2017_GM_CODE000
+Released since Release 45A , Segment length: 0002
+</p><p>
+</p><ol>
+<li>GM_CODE                        : <b>Assign code to transaction for BAPI goods movement                                                                                  </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000002 characters<br>
+Position in segment : 001, Offset : 0063. external length : 000002<br>
+</p></li></ol>
+<p>
+</p><p></p></li><li><h2><a name="/SPE/E1BP2017_GM_REF_EWM   STRUCT">/SPE/E1BP2017_GM_REF_EWM    : BAPI Communication Structure: Material Document EWM Ref.                                                                            </a></h2>
+<p>
+Segment definition /SPE/E1BP2017_GM_REF_EWM000
+Released since Release 700 , Segment length: 0061
+</p><p>
+</p><ol>
+<li>REF_DOC_EWM                    : <b>Number of Material Document in EWM                                                                                                  </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000016 characters<br>
+Position in segment : 001, Offset : 0063. external length : 000016<br>
+</p></li><li>LOGSYS                         : <b>Logical System of EWM Material Document                                                                                             </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 002, Offset : 0079. external length : 000010<br>
+</p></li><li>GTS_SCRAP_NO                   : <b>Customs Reference Number for Scrapping                                                                                              </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000035 characters<br>
+Position in segment : 003, Offset : 0089. external length : 000035<br>
+</p></li></ol>
+<p>
+</p><p></p></li><li><h2><a name="E1BP2017_GM_ITEM_CREATE    STRUCT">E1BP2017_GM_ITEM_CREATE     : BAPI Communication Structure: Create Material Document Item                                                                         </a></h2>
+<p>
+Segment definition E2BP2017_GM_ITEM_CREATE002
+Released since Release 46B , Segment length: 0998
+</p><p>
+</p><ol>
+<li>MATERIAL                       : <b>Material Number                                                                                                                     </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000018 characters<br>
+Position in segment : 001, Offset : 0063. external length : 000018<br>
+</p></li><li>PLANT                          : <b>Plant                                                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000004 characters<br>
+Position in segment : 002, Offset : 0081. external length : 000004<br>
+</p></li><li>STGE_LOC                       : <b>Storage Location                                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000004 characters<br>
+Position in segment : 003, Offset : 0085. external length : 000004<br>
+</p></li><li>BATCH                          : <b>Batch Number                                                                                                                        </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 004, Offset : 0089. external length : 000010<br>
+</p></li><li>MOVE_TYPE                      : <b>Movement Type (Inventory Management)                                                                                                </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000003 characters<br>
+Position in segment : 005, Offset : 0099. external length : 000003<br>
+</p></li><li>STCK_TYPE                      : <b>Stock Type                                                                                                                          </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 006, Offset : 0102. external length : 000001<br>
+</p></li><li>SPEC_STOCK                     : <b>Special Stock Indicator                                                                                                             </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 007, Offset : 0103. external length : 000001<br>
+</p></li><li>VENDOR                         : <b>Vendor Account Number                                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 008, Offset : 0104. external length : 000010<br>
+</p></li><li>CUSTOMER                       : <b>Account Number of Customer                                                                                                          </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 009, Offset : 0114. external length : 000010<br>
+</p></li><li>SALES_ORD                      : <b>Sales Order Number                                                                                                                  </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 010, Offset : 0124. external length : 000010<br>
+</p></li><li>S_ORD_ITEM                     : <b>Item Number in Sales Order                                                                                                          </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000006 characters<br>
+Position in segment : 011, Offset : 0134. external length : 000006<br>
+</p></li><li>SCHED_LINE                     : <b>Delivery Schedule for Sales Order                                                                                                   </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000004 characters<br>
+Position in segment : 012, Offset : 0140. external length : 000004<br>
+</p></li><li>VAL_TYPE                       : <b>Valuation Type                                                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 013, Offset : 0144. external length : 000010<br>
+</p></li><li>ENTRY_QNT                      : <b>Quantity in Unit of Entry                                                                                                           </b><p>
+</p><p>
+internal data type : QUAN<br>
+Internal length : 000013 characters<br>
+000003 decimal places, without sign<br>
+Position in segment : 014, Offset : 0154. external length : 000015<br>
+</p></li><li>ENTRY_UOM                      : <b>Unit of Entry                                                                                                                       </b><p>
+</p><p>
+internal data type : UNIT<br>
+Internal length : 000003 characters<br>
+Position in segment : 015, Offset : 0169. external length : 000003<br>
+</p></li><li>ENTRY_UOM_ISO                  : <b>ISO code for unit of measurement                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000003 characters<br>
+Position in segment : 016, Offset : 0172. external length : 000003<br>
+</p></li><li>PO_PR_QNT                      : <b>Quantity in Purchase Order Price Unit                                                                                               </b><p>
+</p><p>
+internal data type : QUAN<br>
+Internal length : 000013 characters<br>
+000003 decimal places, without sign<br>
+Position in segment : 017, Offset : 0175. external length : 000015<br>
+</p></li><li>ORDERPR_UN                     : <b>Order Price Unit (Purchasing)                                                                                                       </b><p>
+</p><p>
+internal data type : UNIT<br>
+Internal length : 000003 characters<br>
+Position in segment : 018, Offset : 0190. external length : 000003<br>
+</p></li><li>ORDERPR_UN_ISO                 : <b>ISO code for unit of measurement                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000003 characters<br>
+Position in segment : 019, Offset : 0193. external length : 000003<br>
+</p></li><li>PO_NUMBER                      : <b>Purchase Order Number                                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 020, Offset : 0196. external length : 000010<br>
+</p></li><li>PO_ITEM                        : <b>Item Number of Purchasing Document                                                                                                  </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000005 characters<br>
+Position in segment : 021, Offset : 0206. external length : 000005<br>
+</p></li><li>SHIPPING                       : <b>Shipping Instructions                                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000002 characters<br>
+Position in segment : 022, Offset : 0211. external length : 000002<br>
+</p></li><li>COMP_SHIP                      : <b>Compliance with Shipping Instructions                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000002 characters<br>
+Position in segment : 023, Offset : 0213. external length : 000002<br>
+</p></li><li>NO_MORE_GR                     : <b>"Delivery Completed" Indicator                                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 024, Offset : 0215. external length : 000001<br>
+</p></li><li>ITEM_TEXT                      : <b>Item Text                                                                                                                           </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000050 characters<br>
+Position in segment : 025, Offset : 0216. external length : 000050<br>
+</p></li><li>GR_RCPT                        : <b>Goods Recipient/Ship-To Party                                                                                                       </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000012 characters<br>
+Position in segment : 026, Offset : 0266. external length : 000012<br>
+</p></li><li>UNLOAD_PT                      : <b>Unloading Point                                                                                                                     </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000025 characters<br>
+Position in segment : 027, Offset : 0278. external length : 000025<br>
+</p></li><li>COSTCENTER                     : <b>Cost Center                                                                                                                         </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 028, Offset : 0303. external length : 000010<br>
+</p></li><li>ORDERID                        : <b>Order Number                                                                                                                        </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000012 characters<br>
+Position in segment : 029, Offset : 0313. external length : 000012<br>
+</p></li><li>ORDER_ITNO                     : <b>Order Item Number                                                                                                                   </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000004 characters<br>
+Position in segment : 030, Offset : 0325. external length : 000004<br>
+</p></li><li>CALC_MOTIVE                    : <b>Accounting Indicator                                                                                                                </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000002 characters<br>
+Position in segment : 031, Offset : 0329. external length : 000002<br>
+</p></li><li>ASSET_NO                       : <b>Main Asset Number                                                                                                                   </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000012 characters<br>
+Position in segment : 032, Offset : 0331. external length : 000012<br>
+</p></li><li>SUB_NUMBER                     : <b>Asset Subnumber                                                                                                                     </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000004 characters<br>
+Position in segment : 033, Offset : 0343. external length : 000004<br>
+</p></li><li>RESERV_NO                      : <b>Number of Reservation/Dependent Requirement                                                                                         </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000010 characters<br>
+Position in segment : 034, Offset : 0347. external length : 000010<br>
+</p></li><li>RES_ITEM                       : <b>Item Number of Reservation/Dependent Requirement                                                                                    </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000004 characters<br>
+Position in segment : 035, Offset : 0357. external length : 000004<br>
+</p></li><li>RES_TYPE                       : <b>Record type                                                                                                                         </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 036, Offset : 0361. external length : 000001<br>
+</p></li><li>WITHDRAWN                      : <b>Final Issue for This Reservation                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 037, Offset : 0362. external length : 000001<br>
+</p></li><li>MOVE_MAT                       : <b>Receiving/Issuing Material                                                                                                          </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000018 characters<br>
+Position in segment : 038, Offset : 0363. external length : 000018<br>
+</p></li><li>MOVE_PLANT                     : <b>Receiving/Issuing Plant                                                                                                             </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000004 characters<br>
+Position in segment : 039, Offset : 0381. external length : 000004<br>
+</p></li><li>MOVE_STLOC                     : <b>Receiving/Issuing Storage Location                                                                                                  </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000004 characters<br>
+Position in segment : 040, Offset : 0385. external length : 000004<br>
+</p></li><li>MOVE_BATCH                     : <b>Receiving/Issuing Batch                                                                                                             </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 041, Offset : 0389. external length : 000010<br>
+</p></li><li>MOVE_VAL_TYPE                  : <b>Valuation Type of Transfer Batch                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 042, Offset : 0399. external length : 000010<br>
+</p></li><li>MVT_IND                        : <b>Movement Indicator                                                                                                                  </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 043, Offset : 0409. external length : 000001<br>
+</p></li><li>MOVE_REAS                      : <b>Reason for Movement                                                                                                                 </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000004 characters<br>
+Position in segment : 044, Offset : 0410. external length : 000004<br>
+</p></li><li>RL_EST_KEY                     : <b>Internal Key for Real Estate Object                                                                                                 </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000008 characters<br>
+Position in segment : 045, Offset : 0414. external length : 000008<br>
+</p></li><li>REF_DATE                       : <b>Reference Date for Settlement                                                                                                       </b><p>
+</p><p>
+internal data type : DATS<br>
+Internal length : 000008 characters<br>
+Position in segment : 046, Offset : 0422. external length : 000008<br>
+</p></li><li>COST_OBJ                       : <b>Cost Object                                                                                                                         </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000012 characters<br>
+Position in segment : 047, Offset : 0430. external length : 000012<br>
+</p></li><li>PROFIT_SEGM_NO                 : <b>Profitability Segment Number (CO-PA)                                                                                                </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000010 characters<br>
+Position in segment : 048, Offset : 0442. external length : 000010<br>
+</p></li><li>PROFIT_CTR                     : <b>Profit Center                                                                                                                       </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 049, Offset : 0452. external length : 000010<br>
+</p></li><li>WBS_ELEM                       : <b>Work Breakdown Structure Element (WBS Element)                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000024 characters<br>
+Position in segment : 050, Offset : 0462. external length : 000024<br>
+</p></li><li>NETWORK                        : <b>Network Number for Account Assignment                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000012 characters<br>
+Position in segment : 051, Offset : 0486. external length : 000012<br>
+</p></li><li>ACTIVITY                       : <b>Operation/Activity Number                                                                                                           </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000004 characters<br>
+Position in segment : 052, Offset : 0498. external length : 000004<br>
+</p></li><li>PART_ACCT                      : <b>Partner Account Number                                                                                                              </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 053, Offset : 0502. external length : 000010<br>
+</p></li><li>AMOUNT_LC                      : <b>Externally entered posting amount in local currency                                                                                 </b><p>
+</p><p>
+internal data type : DEC <br>
+Internal length : 000023 characters<br>
+000004 decimal places, without sign<br>
+Position in segment : 054, Offset : 0512. external length : 000025<br>
+</p></li><li>AMOUNT_SV                      : <b>Externally entered sales value in local currency                                                                                    </b><p>
+</p><p>
+internal data type : DEC <br>
+Internal length : 000023 characters<br>
+000004 decimal places, without sign<br>
+Position in segment : 055, Offset : 0537. external length : 000025<br>
+</p></li><li>REF_DOC_YR                     : <b>Fiscal Year of a Reference Document                                                                                                 </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000004 characters<br>
+Position in segment : 056, Offset : 0562. external length : 000004<br>
+</p></li><li>REF_DOC                        : <b>Document No. of a Reference Document                                                                                                </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 057, Offset : 0566. external length : 000010<br>
+</p></li><li>REF_DOC_IT                     : <b>Item of a Reference Document                                                                                                        </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000004 characters<br>
+Position in segment : 058, Offset : 0576. external length : 000004<br>
+</p></li><li>EXPIRYDATE                     : <b>Shelf Life Expiration or Best-Before Date                                                                                           </b><p>
+</p><p>
+internal data type : DATS<br>
+Internal length : 000008 characters<br>
+Position in segment : 059, Offset : 0580. external length : 000008<br>
+</p></li><li>PROD_DATE                      : <b>Date of Manufacture                                                                                                                 </b><p>
+</p><p>
+internal data type : DATS<br>
+Internal length : 000008 characters<br>
+Position in segment : 060, Offset : 0588. external length : 000008<br>
+</p></li><li>FUND                           : <b>Fund                                                                                                                                </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 061, Offset : 0596. external length : 000010<br>
+</p></li><li>FUNDS_CTR                      : <b>Funds Center                                                                                                                        </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000016 characters<br>
+Position in segment : 062, Offset : 0606. external length : 000016<br>
+</p></li><li>CMMT_ITEM                      : <b>Commitment Item                                                                                                                     </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000014 characters<br>
+Position in segment : 063, Offset : 0622. external length : 000014<br>
+</p></li><li>VAL_SALES_ORD                  : <b>Sales Order Number of Valuated Sales Order Stock                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 064, Offset : 0636. external length : 000010<br>
+</p></li><li>VAL_S_ORD_ITEM                 : <b>Sales Order Item of Valuated Sales Order Stock                                                                                      </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000006 characters<br>
+Position in segment : 065, Offset : 0646. external length : 000006<br>
+</p></li><li>VAL_WBS_ELEM                   : <b>Work Breakdown Structure Element (WBS Element)                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000024 characters<br>
+Position in segment : 066, Offset : 0652. external length : 000024<br>
+</p></li><li>GL_ACCOUNT                     : <b>G/L Account Number                                                                                                                  </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 067, Offset : 0676. external length : 000010<br>
+</p></li><li>IND_PROPOSE_QUANX              : <b>Propose quantities                                                                                                                  </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 068, Offset : 0686. external length : 000001<br>
+</p></li><li>XSTOB                          : <b>Use Reversal Movement Type Indicator                                                                                                </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 069, Offset : 0687. external length : 000001<br>
+</p></li><li>EAN_UPC                        : <b>International Article Number (EAN/UPC)                                                                                              </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000018 characters<br>
+Position in segment : 070, Offset : 0688. external length : 000018<br>
+</p></li><li>DELIV_NUMB_TO_SEARCH           : <b>Delivery                                                                                                                            </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 071, Offset : 0706. external length : 000010<br>
+</p></li><li>DELIV_ITEM_TO_SEARCH           : <b>Delivery Item                                                                                                                       </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000006 characters<br>
+Position in segment : 072, Offset : 0716. external length : 000006<br>
+</p></li><li>SERIALNO_AUTO_NUMBERASSIGNMENT : <b>Create serial number automatically                                                                                                  </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 073, Offset : 0722. external length : 000001<br>
+</p></li><li>VENDRBATCH                     : <b>Vendor Batch Number                                                                                                                 </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000015 characters<br>
+Position in segment : 074, Offset : 0723. external length : 000015<br>
+</p></li><li>STGE_TYPE                      : <b>Storage Type                                                                                                                        </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000003 characters<br>
+Position in segment : 075, Offset : 0738. external length : 000003<br>
+</p></li><li>STGE_BIN                       : <b>Storage Bin                                                                                                                         </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 076, Offset : 0741. external length : 000010<br>
+</p></li><li>SU_PL_STCK_1                   : <b>Number of Storage Units to be Placed Into Storage                                                                                   </b><p>
+</p><p>
+internal data type : DEC <br>
+Internal length : 000003 characters<br>
+No decimal places, without sign<br>
+Position in segment : 077, Offset : 0751. external length : 000004<br>
+</p></li><li>ST_UN_QTYY_1                   : <b>Quantity per Storage Unit to be Placed into Stock in Alt.UoM                                                                        </b><p>
+</p><p>
+internal data type : QUAN<br>
+Internal length : 000013 characters<br>
+000003 decimal places, without sign<br>
+Position in segment : 078, Offset : 0755. external length : 000015<br>
+</p></li><li>ST_UN_QTYY_1_ISO               : <b>ISO code for unit of measurement                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000003 characters<br>
+Position in segment : 079, Offset : 0770. external length : 000003<br>
+</p></li><li>UNITTYPE_1                     : <b>Storage Unit Type                                                                                                                   </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000003 characters<br>
+Position in segment : 080, Offset : 0773. external length : 000003<br>
+</p></li><li>SU_PL_STCK_2                   : <b>Number of Storage Units to be Placed Into Storage                                                                                   </b><p>
+</p><p>
+internal data type : DEC <br>
+Internal length : 000003 characters<br>
+No decimal places, without sign<br>
+Position in segment : 081, Offset : 0776. external length : 000004<br>
+</p></li><li>ST_UN_QTYY_2                   : <b>Quantity per Storage Unit to be Placed into Stock in Alt.UoM                                                                        </b><p>
+</p><p>
+internal data type : QUAN<br>
+Internal length : 000013 characters<br>
+000003 decimal places, without sign<br>
+Position in segment : 082, Offset : 0780. external length : 000015<br>
+</p></li><li>ST_UN_QTYY_2_ISO               : <b>ISO code for unit of measurement                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000003 characters<br>
+Position in segment : 083, Offset : 0795. external length : 000003<br>
+</p></li><li>UNITTYPE_2                     : <b>Storage Unit Type                                                                                                                   </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000003 characters<br>
+Position in segment : 084, Offset : 0798. external length : 000003<br>
+</p></li><li>STGE_TYPE_PC                   : <b>Storage type for transfer posting                                                                                                   </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000003 characters<br>
+Position in segment : 085, Offset : 0801. external length : 000003<br>
+</p></li><li>STGE_BIN_PC                    : <b>Storage bin for transfer posting                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 086, Offset : 0804. external length : 000010<br>
+</p></li><li>NO_PST_CHGNT                   : <b>Indicator: Do not create posting change notice                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 087, Offset : 0814. external length : 000001<br>
+</p></li><li>GR_NUMBER                      : <b>Goods Receipt Number                                                                                                                </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 088, Offset : 0815. external length : 000010<br>
+</p></li><li>STGE_TYPE_ST                   : <b>Storage type for stock transfer                                                                                                     </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000003 characters<br>
+Position in segment : 089, Offset : 0825. external length : 000003<br>
+</p></li><li>STGE_BIN_ST                    : <b>Storage bin for stock transfer                                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 090, Offset : 0828. external length : 000010<br>
+</p></li><li>MATDOC_TR_CANCEL               : <b>Material doc. no. of transfer requirement to be cancelled                                                                           </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 091, Offset : 0838. external length : 000010<br>
+</p></li><li>MATITEM_TR_CANCEL              : <b>Material doc. item of transf.reqmnt item to be cancelled                                                                            </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000004 characters<br>
+Position in segment : 092, Offset : 0848. external length : 000004<br>
+</p></li><li>MATYEAR_TR_CANCEL              : <b>Material doc. year of transfer requirement to be cancelled                                                                          </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000004 characters<br>
+Position in segment : 093, Offset : 0852. external length : 000004<br>
+</p></li><li>NO_TRANSFER_REQ                : <b>Indicator: No Transfer Requirement Created                                                                                          </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 094, Offset : 0856. external length : 000001<br>
+</p></li><li>CO_BUSPROC                     : <b>Business Process                                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000012 characters<br>
+Position in segment : 095, Offset : 0857. external length : 000012<br>
+</p></li><li>ACTTYPE                        : <b>Activity Type                                                                                                                       </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000006 characters<br>
+Position in segment : 096, Offset : 0869. external length : 000006<br>
+</p></li><li>SUPPL_VEND                     : <b>Supplying Vendor                                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 097, Offset : 0875. external length : 000010<br>
+</p></li><li>MATERIAL_EXTERNAL              : <b>Long Material Number for MATERIAL Field                                                                                             </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000040 characters<br>
+Position in segment : 098, Offset : 0885. external length : 000040<br>
+</p></li><li>MATERIAL_GUID                  : <b>External GUID for MATERIAL Field                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000032 characters<br>
+Position in segment : 099, Offset : 0925. external length : 000032<br>
+</p></li><li>MATERIAL_VERSION               : <b>Version Number for MATERIAL Field                                                                                                   </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 100, Offset : 0957. external length : 000010<br>
+</p></li><li>MOVE_MAT_EXTERNAL              : <b>Long Material Number for MOVE_MAT Field                                                                                             </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000040 characters<br>
+Position in segment : 101, Offset : 0967. external length : 000040<br>
+</p></li><li>MOVE_MAT_GUID                  : <b>External GUID for MOVE_MAT Field                                                                                                    </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000032 characters<br>
+Position in segment : 102, Offset : 1007. external length : 000032<br>
+</p></li><li>MOVE_MAT_VERSION               : <b>Version Number for MOVE_MAT Field                                                                                                   </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 103, Offset : 1039. external length : 000010<br>
+</p></li><li>FUNC_AREA                      : <b>Functional Area                                                                                                                     </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000004 characters<br>
+Position in segment : 104, Offset : 1049. external length : 000004<br>
+</p></li><li>TR_PART_BA                     : <b>Trading Partner's Business Area                                                                                                     </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000004 characters<br>
+Position in segment : 105, Offset : 1053. external length : 000004<br>
+</p></li><li>PAR_COMPCO                     : <b>Clearing company code                                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000004 characters<br>
+Position in segment : 106, Offset : 1057. external length : 000004<br>
+</p></li></ol>
+<p>
+</p><p></p></li><li><h2><a name="E1BP2017_GM_ITEM_CREATE1   STRUCT">E1BP2017_GM_ITEM_CREATE1    : BAPI Communication Structure: Create Material Document Item                                                                         </a></h2>
+<p>
+Segment definition E2BP2017_GM_ITEM_CREATE1004
+Not released , Segment length: 0178
+</p><p>
+</p><ol>
+<li>DELIV_NUMB                     : <b>Delivery                                                                                                                            </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 001, Offset : 0063. external length : 000010<br>
+</p></li><li>DELIV_ITEM                     : <b>Delivery Item                                                                                                                       </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000006 characters<br>
+Position in segment : 002, Offset : 0073. external length : 000006<br>
+</p></li><li>NB_SLIPS                       : <b>Number of GR/GI Slips to Be Printed                                                                                                 </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000003 characters<br>
+Position in segment : 003, Offset : 0079. external length : 000003<br>
+</p></li><li>NB_SLIPSX                      : <b>Updated information in related user data field                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 004, Offset : 0082. external length : 000001<br>
+</p></li><li>GR_RCPTX                       : <b>Updated information in related user data field                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 005, Offset : 0083. external length : 000001<br>
+</p></li><li>UNLOAD_PTX                     : <b>Updated information in related user data field                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 006, Offset : 0084. external length : 000001<br>
+</p></li><li>SPEC_MVMT                      : <b>Special movement indicator for warehouse management                                                                                 </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 007, Offset : 0085. external length : 000001<br>
+</p></li><li>GRANT_NBR                      : <b>Grant                                                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000020 characters<br>
+Position in segment : 008, Offset : 0086. external length : 000020<br>
+</p></li><li>CMMT_ITEM_LONG                 : <b>Commitment Item                                                                                                                     </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000024 characters<br>
+Position in segment : 009, Offset : 0106. external length : 000024<br>
+</p></li><li>FUNC_AREA_LONG                 : <b>Functional Area                                                                                                                     </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000016 characters<br>
+Position in segment : 010, Offset : 0130. external length : 000016<br>
+</p></li><li>LINE_ID                        : <b>Unique identification of document line                                                                                              </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000006 characters<br>
+Position in segment : 011, Offset : 0146. external length : 000006<br>
+</p></li><li>PARENT_ID                      : <b>Identifier of immediately superior line                                                                                             </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000006 characters<br>
+Position in segment : 012, Offset : 0152. external length : 000006<br>
+</p></li><li>LINE_DEPTH                     : <b>Hierarchy level of line in document                                                                                                 </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000002 characters<br>
+Position in segment : 013, Offset : 0158. external length : 000002<br>
+</p></li><li>QUANTITY                       : <b>Quantity                                                                                                                            </b><p>
+</p><p>
+internal data type : QUAN<br>
+Internal length : 000013 characters<br>
+000003 decimal places, without sign<br>
+Position in segment : 014, Offset : 0160. external length : 000015<br>
+</p></li><li>BASE_UOM                       : <b>Base Unit of Measure                                                                                                                </b><p>
+</p><p>
+internal data type : UNIT<br>
+Internal length : 000003 characters<br>
+Position in segment : 015, Offset : 0175. external length : 000003<br>
+</p></li><li>LONGNUM                        : <b>Smart Number                                                                                                                        </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000040 characters<br>
+Position in segment : 016, Offset : 0178. external length : 000040<br>
+</p></li><li>BUDGET_PERIOD                  : <b>FM: Budget Period                                                                                                                   </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 017, Offset : 0218. external length : 000010<br>
+</p></li><li>EARMARKED_NUMBER               : <b>Document Number for Earmarked Funds                                                                                                 </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 018, Offset : 0228. external length : 000010<br>
+</p></li><li>EARMARKED_ITEM                 : <b>Earmarked Funds: Document Item                                                                                                      </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000003 characters<br>
+Position in segment : 019, Offset : 0238. external length : 000003<br>
+</p></li></ol>
+<p>
+</p><p></p></li><li><h2><a name="E1BP2017_GM_SERIALNUMBER   STRUCT">E1BP2017_GM_SERIALNUMBER    : BAPI Communication Structure: Create Mat. Doc., Serial No.                                                                          </a></h2>
+<p>
+Segment definition E2BP2017_GM_SERIALNUMBER001
+Released since Release 701 , Segment length: 0094
+</p><p>
+</p><ol>
+<li>MATDOC_ITM                     : <b>Item in Material Document                                                                                                           </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000004 characters<br>
+Position in segment : 001, Offset : 0063. external length : 000004<br>
+</p></li><li>SERIALNO                       : <b>Serial Number                                                                                                                       </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000018 characters<br>
+Position in segment : 002, Offset : 0067. external length : 000018<br>
+</p></li><li>UII                            : <b>Unique Item Identifier                                                                                                              </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000072 characters<br>
+Position in segment : 003, Offset : 0085. external length : 000072<br>
+</p></li></ol>
+<p>
+</p><p></p></li><li><h2><a name="/SPE/E1BP2017_SERVICEPART_DSTRUCT">/SPE/E1BP2017_SERVICEPART_D : BAPI Communication Structure: Service Parts Data                                                                                    </a></h2>
+<p>
+Segment definition /SPE/E1BP2017_SERVICEPART_D001
+Released since Release 700 , Segment length: 0172
+</p><p>
+</p><ol>
+<li>LINE_ID                        : <b>Unique identification of document line                                                                                              </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000006 characters<br>
+Position in segment : 001, Offset : 0063. external length : 000006<br>
+</p></li><li>RET_AUTH_NUMBER                : <b>Return Material Authorization Number                                                                                                </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000020 characters<br>
+Position in segment : 002, Offset : 0069. external length : 000020<br>
+</p></li><li>DELIV_NUMBER                   : <b>Delivery                                                                                                                            </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 003, Offset : 0089. external length : 000010<br>
+</p></li><li>DELIV_ITEM                     : <b>Delivery Item                                                                                                                       </b><p>
+</p><p>
+internal data type : NUMC<br>
+Internal length : 000006 characters<br>
+Position in segment : 004, Offset : 0099. external length : 000006<br>
+</p></li><li>HU_NUMBER                      : <b>External Handling Unit Identification                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000020 characters<br>
+Position in segment : 005, Offset : 0105. external length : 000020<br>
+</p></li><li>INSPOUT_GUID                   : <b>Inspection Outcome: Stock  GUID set by EWM                                                                                          </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000032 characters<br>
+Position in segment : 006, Offset : 0125. external length : 000032<br>
+</p></li><li>EVENT                          : <b>Logical time                                                                                                                        </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000010 characters<br>
+Position in segment : 007, Offset : 0157. external length : 000010<br>
+</p></li><li>DATE                           : <b>Date                                                                                                                                </b><p>
+</p><p>
+internal data type : DATS<br>
+Internal length : 000008 characters<br>
+Position in segment : 008, Offset : 0167. external length : 000008<br>
+</p></li><li>TIME                           : <b>Time                                                                                                                                </b><p>
+</p><p>
+internal data type : TIMS<br>
+Internal length : 000006 characters<br>
+Position in segment : 009, Offset : 0175. external length : 000006<br>
+</p></li><li>ZONLO                          : <b>Time Zone of Current User                                                                                                           </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000006 characters<br>
+Position in segment : 010, Offset : 0181. external length : 000006<br>
+</p></li><li>TIMESTAMP                      : <b>Start time of transaction (UTC time stamp)                                                                                          </b><p>
+</p><p>
+internal data type : DEC <br>
+Internal length : 000015 characters<br>
+No decimal places, without sign<br>
+Position in segment : 011, Offset : 0187. external length : 000016<br>
+</p></li><li>SCRAP_INDICATOR                : <b>Scrap Indicator for EWM Processing                                                                                                  </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 012, Offset : 0203. external length : 000001<br>
+</p></li><li>KEEP_QUANTITY                  : <b>Retention Quantity for Scrap. Process in EWM                                                                                        </b><p>
+</p><p>
+internal data type : QUAN<br>
+Internal length : 000013 characters<br>
+000003 decimal places, without sign<br>
+Position in segment : 013, Offset : 0204. external length : 000015<br>
+</p></li><li>GTS_STOCK_TYPE                 : <b>GTS Stock Type                                                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 014, Offset : 0219. external length : 000001<br>
+</p></li><li>MOVE_GTS_STOCK_TYPE            : <b>GTS Stock Type                                                                                                                      </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 015, Offset : 0220. external length : 000001<br>
+</p></li><li>KEEP_QUANTITY_CONVERSION       : <b>Quantity conversion not necessary                                                                                                   </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 016, Offset : 0221. external length : 000001<br>
+</p></li><li>ZERO_QUANTITY                  : <b>Allow Posting of Goods Movement Despite Zero Quantity                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000001 characters<br>
+Position in segment : 017, Offset : 0222. external length : 000001<br>
+</p></li><li>NUMERATOR                      : <b>Numerator (factor) for conversion of sales quantity into SKU                                                                        </b><p>
+</p><p>
+internal data type : DEC <br>
+Internal length : 000005 characters<br>
+No decimal places, without sign<br>
+Position in segment : 018, Offset : 0223. external length : 000006<br>
+</p></li><li>DENOMINATR                     : <b>Denominator (Divisor) for Conversion of Sales Qty into SKU                                                                          </b><p>
+</p><p>
+internal data type : DEC <br>
+Internal length : 000005 characters<br>
+No decimal places, without sign<br>
+Position in segment : 019, Offset : 0229. external length : 000006<br>
+</p></li></ol>
+<p>
+</p><p></p></li><li><h2><a name="E1BPPAREX                  STRUCT">E1BPPAREX                   : Ref. Structure for BAPI Parameter EXTENSIONIN/EXTENSIONOUT                                                                          </a></h2>
+<p>
+Segment definition E2BPPAREX000
+Released since Release 46A , Segment length: 0990
+</p><p>
+</p><ol>
+<li>STRUCTURE                      : <b>Structure name of  BAPI table extension                                                                                             </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000030 characters<br>
+Position in segment : 001, Offset : 0063. external length : 000030<br>
+</p></li><li>VALUEPART1                     : <b>Data part of BAPI extension parameter                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000240 characters<br>
+Position in segment : 002, Offset : 0093. external length : 000240<br>
+</p></li><li>VALUEPART2                     : <b>Data part of BAPI extension parameter                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000240 characters<br>
+Position in segment : 003, Offset : 0333. external length : 000240<br>
+</p></li><li>VALUEPART3                     : <b>Data part of BAPI extension parameter                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000240 characters<br>
+Position in segment : 004, Offset : 0573. external length : 000240<br>
+</p></li><li>VALUEPART4                     : <b>Data part of BAPI extension parameter                                                                                               </b><p>
+</p><p>
+internal data type : CHAR<br>
+Internal length : 000240 characters<br>
+Position in segment : 005, Offset : 0813. external length : 000240<br>
+</p></li></ol>
+<p>
+</p></li></ul>
+<p>
+</p><hr>
+<p>
+</p><h2><a name="INFO"> Info... </a></h2>
+Automatically generated HTML doc.<br>
+created on 09.06.2021           at 10:49:37             <br>
+Client 010
+<br>
+System MN1
+<br>
+Release 731
+<br>
+Lang. E
+<br>
+Transaction WE60
+<p>
+Display current status <br>
+Version 3 of IDoc record types : IDoc record types for SAP Release 4.0
+
+
+</p></body></html>
