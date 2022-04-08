@@ -9,10 +9,10 @@
  ## Webservices:
  - Calling the Transactions from web page
     -  syntax for getting xml data: `<protocal>://<server>:<port>/XMII/Runner?Transaction=<transaction_path>&OutputParameter=*&Content-Type=text/xml&<paramName>=<param value>`
-    -  syntax for getting xml data: `<protocal>://<server>:<port>/XMII/Runner?Transaction=<transaction_path>&OutputParameter=*&Content-Type=text/json&<paramName>=<param value>`
+    -  syntax for getting json data: `<protocal>://<server>:<port>/XMII/Runner?Transaction=<transaction_path>&OutputParameter=*&Content-Type=text/json&<paramName>=<param value>`
  - Calling Xacute Qury or Query Template from web page
     - syntax for getting xml data: `<protocal>://<server>:<port>/XMII/Illuminator?QueryTemplate=<query_path>&Content-Type=text/xml&<paramName>=<param value>`
-    - syntax for getting xml data: `<protocal>://<server>:<port>/XMII/Illuminator?QueryTemplate=<query_path>&Content-Type=text/json&<paramName>=<param value>`
+    - syntax for getting json data: `<protocal>://<server>:<port>/XMII/Illuminator?QueryTemplate=<query_path>&Content-Type=text/json&<paramName>=<param value>`
 # Illuminator Services in MII
 - MII Services or illuminator services are basically a set of HTTP services that provide some core functionality of SAP MII. We can call these services externally by XML message exchange.
 
