@@ -1,5 +1,6 @@
-# sap mii web page [make down cheet sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables)
+# sap mii web page 
 ## global properties:
+[make down cheet sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables)
 - `IllumLoginName` gives the login user name
 - `IllumLoginRoles` gives the login user roles
   - syntax to get the values
