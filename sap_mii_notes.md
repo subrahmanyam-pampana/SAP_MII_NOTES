@@ -8,7 +8,7 @@
  
  ## Webservices:
  - WebService to place a Message in MII Que, used to send xml to MII from MES system trough HTTP post call
-    - `http://<server>:<port>/XMII/Illuminator?service=WSMessageListener&mode=WSMessageListenerServer&NAME=<UniqueMessageName>`
+    - `http://<server>:<port>/XMII/Illuminator?service=WSMessageListener&mode=WSMessageListenerServer&NAME=<UniqueMessageName>&content-type=xml/text`
  - Calling the Transactions from web page
     -  syntax for getting xml data: `<protocal>://<server>:<port>/XMII/Runner?Transaction=<transaction_path>&OutputParameter=*&Content-Type=text/xml&<paramName>=<param value>`
     -  syntax for getting json data: `<protocal>://<server>:<port>/XMII/Runner?Transaction=<transaction_path>&OutputParameter=*&Content-Type=text/json&<paramName>=<param value>`
