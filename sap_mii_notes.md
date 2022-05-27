@@ -53,7 +53,7 @@ This will return all the Query template files, if you remove Class from the URL 
 
 This would return the folder path which contains MDO objects, for example : MDO/MIIOBJ. This folder path could be passed to the below URL to get the persistent MDO objects:
 
-http://host:port/XMII/Catalog?Mode=List&Folder=MDO/MIIOBJ&Mask=mdop
+`http://host:port/XMII/Catalog?Mode=List&Folder=MDO/MIIOBJ&Mask=mdop`
 ## How's
 1. How to Send Data from MII to ECC using RFC?
 ...let us discuss here
