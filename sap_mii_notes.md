@@ -1,6 +1,6 @@
 # sap mii web page 
 ## global properties:
-[make down cheet sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables)
+[mark down cheet sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables)
 - `IllumLoginName` gives the login user name
 - `IllumLoginRoles` gives the login user roles
   - syntax to get the values
@@ -40,6 +40,20 @@
 - DataServer
 - MII Services:
 [check more details](https://blogs.sap.com/2013/01/02/illuminator-services-of-sap-mii/#:~:text=MII%20Services%20or%20illuminator%20services,of%20operations%20of%20the%20service.)
+## Catalog Services
+1.to get the list of folders and sub folders use the below service
+
+`http://host:port/XMII/Catalog?Mode=LoadFilesInsideFolderAndSubfolders&Class=Query&Folder=<project_folder_name>`
+
+This will return all the Query template files, if you remove Class from the URL it would return files irrespective of the type.
+
+2.To get MDO files you could try the below combination of URLs:
+
+`http://host:port/XMII/Catalog?Mode=ListFolders&Folder=<project_folder_name>&Type=MDO`
+
+This would return the folder path which contains MDO objects, for example : MDO/MIIOBJ. This folder path could be passed to the below URL to get the persistent MDO objects:
+
+http://host:port/XMII/Catalog?Mode=List&Folder=MDO/MIIOBJ&Mask=mdop
 ## How's
 1. How to Send Data from MII to ECC using RFC?
 ...let us discuss here
